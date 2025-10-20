@@ -1,0 +1,58 @@
+body {
+    margin: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 10px;
+    background-color: orangered;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    font-family: Garamond;
+}
+
+.menu {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    width: 75%;
+    font-family: Garamond;
+}
+
+.red {
+    color: black;
+}
+
+
+.receitas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.receitas div {
+    flex: auto;
+    background-color: orange;
+    text-align: center;
+    width: 45%;
+    margin: 45px;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
