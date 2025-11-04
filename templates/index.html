@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<a href="{{url_for('index')}}"> <h1>Index</h1> </a>
+
+{%block conteudo%}
+<a href="{{ url_for('get_ingredientes') }}">Ingrediente</a><br>
+<a href="{{ url_for('get_receitas') }}">Receitas</a><br>
+
+{%endblock conteudo%}
+
+</body>
+</html>

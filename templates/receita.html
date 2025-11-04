@@ -1,0 +1,42 @@
+<html html>
+<html lang="PT-br"
+<head>
+    <meta charset="UTF-8">
+    <title>Receitas</title>
+    <link rel="stylesheet" href="/static/site_receita.css">
+</head>
+
+<body>
+
+<div class="header">
+    <div class="nome">SaborTech</div>
+    <div class="direita">
+        <a href="http://localhost:63342/site_receita/templates/site_receita.html?_ijt=o31587dicm6ctf7orreafqq48c"><strong>Receitas</strong></a>
+        <a href="http://localhost:63342/site_receita/templates/site_receita4.html?_ijt=riqbskk115ug48ru28941pklmq"><strong>Ingredientes</strong></a>
+    </div>
+</div>
+<br>
+
+<div class="menu">
+    {% for receita in receitas %}
+    <div>
+        <a href="http://localhost:63342/site_receita/templates/site_receita2.html?_ijt=o31587dicm6ctf7orreafqq48c"><strong>{{receita.nome}}</strong></a>
+        <br><br>
+        <img src="../static/nhoque.jpeg" height="180" width="220"/>
+    </div>
+    {% endfor %}
+    <div>
+        <a href="http://localhost:63342/site_receita/templates/site_receita3.html?_ijt=o31587dicm6ctf7orreafqq48c"><strong>Adicionar
+            Receita</strong></a> <br><br>
+        <img src="../static/7043658.png" height="100" width="100"/>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>SaborTech</title>
-    <link rel="stylesheet" href="../Static/site_receita.css">
+    <link rel="stylesheet" href="../static/site_receita.css">
 </head>
 <body>
 <div class="header">
@@ -15,28 +15,22 @@
 </div>
 
 <div class="receitas">
+    {% for receita in receitas%}
     <div>
-        <a href="http://localhost:63342/site_receita/templates/site_receita2.html?_ijt=o31587dicm6ctf7orreafqq48c"><strong>Nhoque com Molho Gorgonzola</strong></a>
-        <br><br>
-        <img src="../Static/nhoque.jpeg" height="180" width="220"/>
-    </div>
 
-    <div>
-        <a href="http://localhost:63342/site_receita/templates/site_receita2.html?_ijt=o31587dicm6ctf7orreafqq48c"><strong>Purê de Abóbora</strong></a>
+        <a href="http://localhost:63342/site_receita/templates/site_receita2.html?_ijt=o31587dicm6ctf7orreafqq48c">
+            <strong>{{receita.nome}}</strong></a>
+            <div>{{receita.dificuldade}}</div>
         <br><br>
-        <img src="../Static/frango.jpg" height="180" width="220"/>
-    </div>
+        <img src="/static/nhoque.jpeg" height="180" width="220"/>
 
-    <div>
-        <a href="http://localhost:63342/site_receita/templates/site_receita2.html?_ijt=o31587dicm6ctf7orreafqq48c"><strong>Torresmo</strong></a>
-        <br><br>
-        <img src="../Static/images (2).jpg" height="180" width="220"/>
     </div>
+ {% endfor %}
 
     <div>
         <a href="http://localhost:63342/site_receita/templates/site_receita3.html?_ijt=o31587dicm6ctf7orreafqq48c"><strong>Adicionar
             Receita</strong></a> <br><br>
-        <img src="../Static/7043658.png" height="100" width="100"/>
+        <img src="../static/7043658.png" height="100" width="100"/>
     </div>
 </div>
 
